@@ -3,7 +3,7 @@ class GameController < ApplicationController
   def move
      @all_moves = Move.all
 
-    @user_move = params["move"]
+    @user_move = params["play"]
 
     @computer_move = ["rock", "paper", "scissors"].sample
 
