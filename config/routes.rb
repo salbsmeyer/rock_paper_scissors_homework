@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   # This route is for the bare domain. You can ignore it.
-  get("/", { :controller => "game", :action => "home" })
+  #get("/", { :controller => "game", :action => "new_game" })
 
   # Your code goes below.
+
+   get("/",                 { :controller => "game", :action => "move" })
 
 end
