@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # Your code goes below.
 
    get("/",                 { :controller => "game", :action => "move" })
+   get("/move/:move",                 { :controller => "game", :action => "move" })
 
 end

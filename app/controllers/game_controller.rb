@@ -3,7 +3,7 @@ class GameController < ApplicationController
   def move
      @all_moves = Move.all
 
-    @user_move = params["play"]
+    @user_move = params["move"]
 
     @computer_move = ["rock", "paper", "scissors"].sample
 
@@ -40,7 +40,7 @@ class GameController < ApplicationController
     m.save
 
 
-    render("play.html.erb")
+    render("move.html.erb")
   end
 
 end
